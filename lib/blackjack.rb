@@ -68,5 +68,6 @@ def runner
   if current_total > 21
     end_game
   else
+    
 end
     
