@@ -48,7 +48,6 @@ def hit?(current_total)
     new_total
   elsif input != 'h' || 's'
     invalid_command
-    prompt_user
   end
 end
 
