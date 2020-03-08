@@ -30,26 +30,38 @@ def end_game(card_total)
   puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
-# def initial_round
-#   # code #initial_round here
-#   card_total = deal_card
-#   card_total += deal_card
-#   display_card_total(card_total)
-# end
+def initial_round
+  # code #initial_round here
+  card_total = deal_card + deal_card
+  display_card_total(card_total)
+  card_total
+end
 
-# def hit?
-#   # code hit? here
-# end
+def hit?(current_total)
+  # code hit? here
+  prompt_user
+  input = get_user_input
+  if input == 's'
+    current_total
+  elsif input == 'h'
+    new_total = current_total + deal_card
+    new_total
+  elsif input != 'h' || 's'
+    invalid_command
+    prompt_user
+  end
+end
 
-# def invalid_command
-#   # code invalid_command here
-# end
+def invalid_command
+  # code invalid_command here
+  puts "Please enter a valid command"
+end
 
-# #####################################################
-# # get every test to pass before coding runner below #
-# #####################################################
+#####################################################
+# get every test to pass before coding runner below #
+#####################################################
 
-# def runner
-#   # code runner here
-# end
+def runner
+  # code runner here
+end
     
