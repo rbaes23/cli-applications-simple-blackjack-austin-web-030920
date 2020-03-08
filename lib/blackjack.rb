@@ -65,7 +65,6 @@ def runner
   # code runner here
   welcome
   current_total = initial_round
-  binding.pry
   until current_total > 21
     current_total = hit?(current_total)
     display_card_total(current_total)
