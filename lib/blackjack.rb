@@ -64,6 +64,7 @@ end
 def runner
   # code runner here
   welcome
-  current_total = 
+  current_total = initial_round
+  prompt_user
 end
     
